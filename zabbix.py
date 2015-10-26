@@ -82,12 +82,12 @@ EXAMPLES = '''
     action: 'create'
     object: 'host'
     params:
-       host: 'Sample host'
-       groups:
-         - groupid:  "{{ groupid }}"
-       templates:
-         - templateid: 5
-       interfaces:
+      host: 'Sample host'
+      groups:
+        - groupid:  "{{ groupid }}"
+      templates:
+        - templateid: 5
+      interfaces:
         - type: 1
           main: 1
           useip: 1
@@ -119,7 +119,7 @@ EXAMPLES = '''
     object: 'host'
     params:
       - "{{ item.hostid }}"
-   with_items: "{{ host_list }}"
+  with_items: "{{ host_list }}"
 '''
 
 
